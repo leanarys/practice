@@ -3,15 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://leanarys.github.io/practice",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start",
-    "predeploy": "npm run build && npm run export",
-    "deploy": "gh-pages -d out",
-    "lint": "next lint",
-    "export": "next export"
-  },
+"scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d out"
+},
   "dependencies": {
     "next": "15.3.3",
     "react": "^19.0.0",
