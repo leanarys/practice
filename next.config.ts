@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  images: { unoptimized: true }, // if you're using next/image
-  trailingSlash: true,           // ensures proper routing on GitHub Pages
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
+  basePath: '/practice', // ADD THIS LINE!
 };
 
 module.exports = nextConfig;

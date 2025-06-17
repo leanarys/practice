@@ -4,11 +4,13 @@
   "private": true,
   "homepage": "https://leanarys.github.io/practice",
   "scripts": {
+    "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && npm run export",
     "deploy": "gh-pages -d out",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "next": "15.3.3",
